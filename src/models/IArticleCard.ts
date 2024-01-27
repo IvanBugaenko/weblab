@@ -1,5 +1,5 @@
 interface IArticleCard {
-    cover: string,
-    header: string,
-    description: string,
+  cover: string;
+  header: string;
+  description: string;
 }

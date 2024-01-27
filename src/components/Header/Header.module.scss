@@ -1,28 +1,27 @@
-@import '../../variables.scss';
+@import "../../variables.scss";
 
 .header {
-    margin-top: 3.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  margin-top: 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .logo {
-    display: flex;
-    align-items: center;
-    gap: 0.75em;
-    
+  display: flex;
+  align-items: center;
+  gap: 0.75em;
 }
 
 .logo_img {
-    width: 3.5rem;
-    height: 3.5rem;
+  width: 3.5rem;
+  height: 3.5rem;
 }
 
 .logo_text {
-    color: $logo_text;
-    font-size: 1.5rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
+  color: $logo_text;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }

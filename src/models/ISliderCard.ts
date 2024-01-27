@@ -1,5 +1,5 @@
 interface ISliderCard {
-    header: string,
-    description: string,
-    user: IUser
+  header: string;
+  description: string;
+  user: IUser;
 }

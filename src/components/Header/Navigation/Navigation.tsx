@@ -7,9 +7,7 @@ function Navigation(props: { buttons: INavigationLink[] }) {
       <li>
         <NavLink
           to={button.link}
-          className={({ isActive }) =>
-            isActive ? classes.active : ''
-          }
+          className={({ isActive }) => (isActive ? classes.active : "")}
         >
           {button.text}
         </NavLink>

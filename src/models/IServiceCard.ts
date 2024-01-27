@@ -1,5 +1,5 @@
 interface IServiceCard {
-    icon: string,
-    header: string,
-    description: string,
+  icon: string;
+  header: string;
+  description: string;
 }

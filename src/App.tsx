@@ -2,7 +2,7 @@ import "./App.module.scss";
 import { BrowserRouter, Routes, Route, Outlet } from "react-router-dom";
 import Empty from "./pages/Empty/Empty";
 import Header from "./components/Header/Header";
-import Home from './pages/Home/Home'
+import Home from "./pages/Home/Home";
 
 function App() {
   const pages: INavigationLink[] = [
