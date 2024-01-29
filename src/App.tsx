@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route, Outlet } from "react-router-dom";
 import Empty from "./pages/Empty/Empty";
 import Header from "./components/Header/Header";
 import Home from "./pages/Home/Home";
+import AppStrings from "./strings";
 
 function App() {
   const pages: INavigationLink[] = [
@@ -28,7 +29,7 @@ function App() {
     },
   ];
 
-  const name: string = "HealthCare";
+  const name: string = AppStrings.app_name;
 
   return (
     <BrowserRouter>

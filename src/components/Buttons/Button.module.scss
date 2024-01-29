@@ -1,0 +1,42 @@
+@import "../../variables.scss";
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 12.5rem;
+  height: 3.5rem;
+  border-radius: 3.44rem;
+
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 700;
+  text-decoration: none;
+
+  transition-duration: 0.4s;
+}
+
+.button:hover {
+  box-shadow: $hover_shadow;
+}
+
+.with_filling {
+  color: $primary_white;
+  background-color: $primary_blue;
+  border: none;
+}
+
+.with_filling:hover {
+  background-color: $primary_pink
+}
+
+.without_filling {
+  color: $primary_blue;
+  background-color: $primary_white;
+  border: 1px solid $primary_blue;
+}
+
+.without_filling:hover {
+  border: 1px solid $primary_pink;
+  color: $primary_pink;
+}

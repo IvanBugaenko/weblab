@@ -1,0 +1,50 @@
+@import "../../variables.scss";
+
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.banner:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.text_box {
+  max-width: 30rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.illustration {
+  max-width: 45%;
+  min-width: 30rem;
+}
+
+.divider {
+  width: 3.5rem;
+  border: 1px solid $primary_black;
+  margin-bottom: 2rem;
+}
+
+.header_text {
+  font-weight: 700;
+  color: $primary_black;
+  font-size: 3rem;
+  font-style: normal;
+  line-height: 3.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.description_text {
+  color: $primary_gray;
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 2rem;
+  margin-bottom: 3rem;
+}
+
+.d_none {
+  display: none;
+}
