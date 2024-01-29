@@ -1,0 +1,42 @@
+@import "../../../variables.scss";
+
+.service_card {
+  display: flex;
+  flex-direction: column;
+
+  border-radius: 1.25rem;
+
+  background: $primary_white;
+  box-shadow: $services_shadow;
+
+  padding: 3rem 3rem 2.5rem 2rem;
+
+  transition-duration: 0.4s;
+}
+
+.service_card:hover {
+    background: darken($color: $primary_white, $amount: 3);
+}
+
+.icon {
+  width: 5.74863rem;
+  height: 5.625rem;
+
+  margin-bottom: 1rem;
+}
+
+.header_text {
+  color: $primary_black;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 3.5rem;
+}
+
+.description_text {
+  color: $primary_gray;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.75rem;
+}

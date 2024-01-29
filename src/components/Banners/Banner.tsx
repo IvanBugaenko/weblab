@@ -6,13 +6,13 @@ function Banner(props: { banner_info: IBanner; button: JSX.Element; style?: CSSP
     <section className={classes.banner} style={props.style}>
       <img src={props.banner_info.illustration} className={classes.illustration}/>
       <div className={classes.text_box}>
-        <div className={classes.header_text}>{props.banner_info.header}</div>
+        <h2 className={classes.header_text}>{props.banner_info.header}</h2>
         <hr
           className={
             props.banner_info.divider ? classes.divider : classes.d_none
           }
         />
-        <div className={classes.description_text}>{props.banner_info.description}</div>
+        <p className={classes.description_text}>{props.banner_info.description}</p>
         {props.button}
       </div>
     </section>

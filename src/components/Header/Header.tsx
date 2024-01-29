@@ -10,7 +10,7 @@ function Header(props: { name: string; buttons: INavigationLink[] }) {
           alt="logo"
           className={classes.logo_img}
         />
-        <span className={classes.logo_text}>{props.name}</span>
+        <h1 className={classes.logo_text}>{props.name}</h1>
       </div>
       <Navigation buttons={props.buttons} />
     </header>

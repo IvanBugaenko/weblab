@@ -1,6 +1,8 @@
 // import { MainBanner, PairBanner } from "../../components/Banners";
 import Button from "../../components/Buttons/Button";
 import Banner from "../../components/Banners/Banner";
+import Services from "../../components/Services/Services";
+import active_services from "../../mock/Services";
 
 function Home() {
   const mainBanner: IBanner = {
@@ -41,22 +43,37 @@ function Home() {
     filling: false,
   };
 
+  const serviceButton: IButton = {
+    text: "Learn more",
+    filling: false,
+  };
+
   return (
     <>
       <Banner
         banner_info={mainBanner}
         button={<Button button_info={consultButton}></Button>}
-        style={{margin: '5.25rem 0 0 0'}}
+        style={{ margin: "5.25rem 0 0 0" }}
+      />
+      <Services
+        header={"Our services"}
+        description={
+          "We provide to you the best choices for you. Adjust it to your health needs and make sure your undergo \
+          treatment with our highly qualified doctors you can consult with us which type of service is suitable for your health"
+        }
+        active_services={active_services}
+        button={<Button button_info={serviceButton}></Button>}
+        style={{ margin: "14rem 0 0 0", padding: "0 5rem" }}
       />
       <Banner
         banner_info={leadingProvidersBanner}
         button={<Button button_info={leadingButton}></Button>}
-        style={{margin: '14rem 0 0 0', padding: '0 5rem'}}
+        style={{ margin: "14rem 0 0 0", padding: "0 5rem" }}
       />
       <Banner
         banner_info={mobileBanner}
         button={<Button button_info={mobileButton}></Button>}
-        style={{margin: '14rem 0 0 0', padding: '0 5rem'}}
+        style={{ margin: "8rem 0 0 0", padding: "0 3rem" }}
       />
     </>
   );

@@ -1,0 +1,39 @@
+@import "../../variables.scss";
+
+.services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.divider {
+  width: 3.5rem;
+  border: 1px solid $primary_black;
+  margin-bottom: 2rem;
+}
+
+.header_text {
+  color: $primary_black;
+  font-size: 2.25rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 3.5rem;
+  margin-bottom: 1.6rem;
+}
+
+.description_text {
+  color: $primary_gray;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.875rem;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.service_cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2rem;
+  margin-bottom: 4.5rem;
+}
