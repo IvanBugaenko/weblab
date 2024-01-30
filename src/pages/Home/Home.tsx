@@ -5,6 +5,8 @@ import active_services from "../../mock/Services";
 import SliderCard from "../../components/Slider/SliderCard/SliderCard";
 import sliders from "../../mock/Sliders";
 import Slider from "../../components/Slider/Slider";
+import articles from "../../mock/Articles";
+import Articles from "../../components/Articles/Articles";
 
 function Home() {
   const mainBanner: IBanner = {
@@ -50,6 +52,16 @@ function Home() {
     filling: false,
   };
 
+  const articleButtonCollapsed: IButton = {
+    text: "View more",
+    filling: false,
+  };
+
+  const articleButtonUncollapsed: IButton = {
+    text: "Hide",
+    filling: false,
+  };
+
   const slide_list = Array.from(sliders, (slider_card, _) => (
     <SliderCard slider_card={slider_card} />
   ));
@@ -84,6 +96,12 @@ function Home() {
       <Slider
         slides={slide_list}
         style={{ margin: "16rem 0 0 0", padding: "0 3rem" }}
+      />
+      <Articles
+        header={"Check out our latest article"}
+        articles={articles}
+        buttons={[articleButtonCollapsed, articleButtonUncollapsed]}
+        style={{ margin: "10rem 0 0 0", padding: "0 5rem" }}
       />
     </>
   );

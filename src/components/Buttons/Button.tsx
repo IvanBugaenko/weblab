@@ -1,8 +1,9 @@
 import classes from "./Button.module.scss";
 
-function Button(props: { button_info: IButton }) {
+function Button(props: { button_info: IButton, onClick?: () => void }) {
   return (
     <button
+    onClick={props.onClick}
       className={`${classes.button} ${
         props.button_info.filling
           ? classes.with_filling
