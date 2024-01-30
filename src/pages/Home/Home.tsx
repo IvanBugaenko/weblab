@@ -1,8 +1,10 @@
-// import { MainBanner, PairBanner } from "../../components/Banners";
 import Button from "../../components/Buttons/Button";
 import Banner from "../../components/Banners/Banner";
 import Services from "../../components/Services/Services";
 import active_services from "../../mock/Services";
+import SliderCard from "../../components/Slider/SliderCard/SliderCard";
+import sliders from "../../mock/Sliders";
+import Slider from "../../components/Slider/Slider";
 
 function Home() {
   const mainBanner: IBanner = {
@@ -48,6 +50,10 @@ function Home() {
     filling: false,
   };
 
+  const slide_list = Array.from(sliders, (slider_card, _) => (
+    <SliderCard slider_card={slider_card} />
+  ));
+
   return (
     <>
       <Banner
@@ -63,7 +69,7 @@ function Home() {
         }
         active_services={active_services}
         button={<Button button_info={serviceButton}></Button>}
-        style={{ margin: "14rem 0 0 0", padding: "0 5rem" }}
+        style={{ margin: "10rem 0 0 0", padding: "0 5rem" }}
       />
       <Banner
         banner_info={leadingProvidersBanner}
@@ -73,7 +79,11 @@ function Home() {
       <Banner
         banner_info={mobileBanner}
         button={<Button button_info={mobileButton}></Button>}
-        style={{ margin: "8rem 0 0 0", padding: "0 3rem" }}
+        style={{ margin: "14rem 0 0 0", padding: "0 5rem" }}
+      />
+      <Slider
+        slides={slide_list}
+        style={{ margin: "16rem 0 0 0", padding: "0 3rem" }}
       />
     </>
   );
