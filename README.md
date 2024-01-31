@@ -1,30 +1,57 @@
-# React + TypeScript + Vite
+# «Профессиональная разработка мобильных приложений»
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Лабораторная работа №3: реализация экрана при помощи библиотеки React (Web-разработка)
 
-Currently, two official plugins are available:
+## Задание
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Необходимо реализовать лендинг больницы при помощи библиотеки **ReactJS**.
 
-## Expanding the ESLint configuration
+## Стек технологий
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+|            	| Версия  	|
+|------------	|---------	|
+| Node.js    	| 20.11.0 	|
+| npm        	| 10.2.4  	|
+| vite       	| 5.0.8   	|
+| ReactJS    	| 18.2.0  	|
+| TypeScript 	| 5.2.2   	|
+| Sass       	| 1.70.0  	|
 
-- Configure the top-level `parserOptions` property like this:
+## Развертывание лендинга локально
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+Необходимо склонировать репозиторий при помощи команды или загрузить архив с кодом.
+
+```
+git clone https://github.com/IvanBugaenko/weblab.git
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+После этого необходимо перейти в папку с проектом и ввести следующие команды:
+
+```
+npm install
+npm run dev
+```
+
+## Описание лендинга
+
+Глобально, экран состоит из следующих компонентов:
+
+1. заголовок экрана (header), необходимый для навигации по сайту;
+2. баннеры, содержащие информацию о приложении больницы и функционале сервиса;
+3. информационные карточки с информацией о доступных сервисах для пользователей;
+4. карусель с комментариями от пользователей;
+5. актуальные статьи;
+6. справочная информация (footer).
+
+## Результат работы
+
+В результате работы был **реализован экран**, состоящий из всех компонентов. Также был **создан репозиторий**, 
+в котором хранится история версий экрана (присутствует **ветвление**). Был **оформлен файл README.md**, 
+хранящий информацию о лабораторной работе, **приложены скриншоты работы**. **Настроен .gitignore**, 
+чтобы в проекте не было лишних файлов.
+
+У элементов, которые этого требуют, **присутствует hover-эффект**, реализован **слайдер**, который имеет возможность перелистывать слайды. Также реализована **возможность показывать и скрывать статьи**.
+
+## Демонстрация экрана
+
+Ссылка на видео-демонстрацию решения: https://clck.ru/38T4H8
