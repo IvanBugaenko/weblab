@@ -1,0 +1,72 @@
+@import "../../variables.scss";
+
+.footer {
+  display: flex;
+  background: $footer_gradient;
+  width: 100%;
+  justify-content: space-around;
+  padding: 6rem 0;
+}
+
+.company_info {
+  max-width: 24.5rem;
+  min-height: 13rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo_img {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-right: 0.75rem;
+}
+
+.logo_text {
+  color: $primary_white;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.description_text {
+  color: $primary_white;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.75rem;
+  opacity: 0.8;
+  text-decoration: none;
+}
+
+.header_text {
+  color: $primary_white;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 3.75rem; /* 300% */
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.column_info {
+  list-style: none;
+}
+
+.element {
+  margin-top: 0.5rem;
+
+  a:hover {
+    transition-duration: 0.5s;
+    color: lighten($primary_black, 20);
+  }
+}

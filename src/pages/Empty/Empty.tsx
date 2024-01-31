@@ -2,9 +2,11 @@ import classes from "./Empty.module.scss";
 
 function Empty() {
   return (
-    <div className={classes.empty}>
-      <h1>In progress...</h1>
-    </div>
+    <main>
+      <div className={classes.empty}>
+        <h1>In progress...</h1>
+      </div>
+    </main>
   );
 }
 

@@ -68,41 +68,43 @@ function Home() {
 
   return (
     <>
-      <Banner
-        banner_info={mainBanner}
-        button={<Button button_info={consultButton}></Button>}
-        style={{ margin: "5.25rem 0 0 0" }}
-      />
-      <Services
-        header={"Our services"}
-        description={
-          "We provide to you the best choices for you. Adjust it to your health needs and make sure your undergo \
+      <main>
+        <Banner
+          banner_info={mainBanner}
+          component={<Button button_info={consultButton}></Button>}
+          style={{ margin: "5.25rem 0 0 0" }}
+        />
+        <Services
+          header={"Our services"}
+          description={
+            "We provide to you the best choices for you. Adjust it to your health needs and make sure your undergo \
           treatment with our highly qualified doctors you can consult with us which type of service is suitable for your health"
-        }
-        active_services={active_services}
-        button={<Button button_info={serviceButton}></Button>}
-        style={{ margin: "10rem 0 0 0", padding: "0 5rem" }}
-      />
-      <Banner
-        banner_info={leadingProvidersBanner}
-        button={<Button button_info={leadingButton}></Button>}
-        style={{ margin: "14rem 0 0 0", padding: "0 5rem" }}
-      />
-      <Banner
-        banner_info={mobileBanner}
-        button={<Button button_info={mobileButton}></Button>}
-        style={{ margin: "14rem 0 0 0", padding: "0 5rem" }}
-      />
-      <Slider
-        slides={slide_list}
-        style={{ margin: "16rem 0 0 0", padding: "0 3rem" }}
-      />
-      <Articles
-        header={"Check out our latest article"}
-        articles={articles}
-        buttons={[articleButtonCollapsed, articleButtonUncollapsed]}
-        style={{ margin: "10rem 0 0 0", padding: "0 5rem" }}
-      />
+          }
+          active_services={active_services}
+          button={<Button button_info={serviceButton}></Button>}
+          style={{ margin: "10rem 0 0 0", padding: "0 5rem" }}
+        />
+        <Banner
+          banner_info={leadingProvidersBanner}
+          component={<Button button_info={leadingButton}></Button>}
+          style={{ margin: "14rem 0 0 0" }}
+        />
+        <Banner
+          banner_info={mobileBanner}
+          component={<Button button_info={mobileButton}></Button>}
+          style={{ margin: "14rem 0 0 0" }}
+        />
+        <Slider
+          slides={slide_list}
+          style={{ margin: "16rem 0 0 0", padding: "0 3rem" }}
+        />
+        <Articles
+          header={"Check out our latest article"}
+          articles={articles}
+          buttons={[articleButtonCollapsed, articleButtonUncollapsed]}
+          style={{ margin: "10rem 0 12rem 0" }}
+        />
+      </main>
     </>
   );
 }

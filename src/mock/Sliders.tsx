@@ -18,8 +18,8 @@ const user3: IUser = {
 
 const user4: IUser = {
     user_photo: String.raw`src\assets\images\users\avatar4.png`,
-    user_name: 'Apple Cat',
-    user_position: 'Food'
+    user_name: 'Floppa',
+    user_position: 'God'
 }
 
 const slider_card1: ISliderCard = {

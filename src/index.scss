@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;700&display=swap");
 @import "./variables.scss";
 
 :root {
@@ -17,6 +17,14 @@
   padding: 0;
 }
 
-body {
+html, body {
+  height: 100%;
+}
+
+header, main {
   padding: 3.5rem 17rem 0 17rem;
+}
+
+main {
+  min-height: 42vh;
 }

@@ -4,15 +4,20 @@
   display: flex;
   list-style: none;
   gap: 2.5rem;
-}
 
-.nav_list a {
-  color: $secondary_black;
-  font-size: 1.125rem;
-  line-height: normal;
-  font-style: normal;
-  opacity: 0.5;
-  text-decoration: none;
+  a {
+    color: $secondary_black;
+    font-size: 1.125rem;
+    line-height: normal;
+    font-style: normal;
+    opacity: 0.5;
+    text-decoration: none;
+  }
+
+  a:hover {
+    transition-duration: 0.4s;
+    color: darken($primary_white, 40);
+  }
 }
 
 .nav_list a.active {

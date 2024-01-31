@@ -1,9 +1,9 @@
-import "./App.module.scss";
 import { BrowserRouter, Routes, Route, Outlet } from "react-router-dom";
 import Empty from "./pages/Empty/Empty";
 import Header from "./components/Header/Header";
 import Home from "./pages/Home/Home";
 import AppStrings from "./strings";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   const pages: INavigationLink[] = [
@@ -29,6 +29,73 @@ function App() {
     },
   ];
 
+  const companyLinks: INavigationLink[] = [
+    {
+      text: "About",
+      link: "#!",
+    },
+    {
+      text: "Testimonials",
+      link: "#!",
+    },
+    {
+      text: "Find a doctor",
+      link: "#!",
+    },
+    {
+      text: "Apps",
+      link: "#!",
+    },
+  ];
+
+  const regionLinks: INavigationLink[] = [
+    {
+      text: "Indonesia",
+      link: "#!",
+    },
+    {
+      text: "Singapore",
+      link: "#!",
+    },
+    {
+      text: "Hongkong",
+      link: "#!",
+    },
+    {
+      text: "Canada",
+      link: "#!",
+    },
+  ];
+
+  const helpLinks: INavigationLink[] = [
+    {
+      text: "Help center",
+      link: "#!",
+    },
+    {
+      text: "Contact support",
+      link: "#!",
+    },
+    {
+      text: "Instructions",
+      link: "#!",
+    },
+    {
+      text: "How it works",
+      link: "#!",
+    },
+  ];
+
+  const footer = (
+    <Footer
+      content={{
+        Company: companyLinks,
+        Region: regionLinks,
+        Help: helpLinks,
+      }}
+    />
+  );
+
   const name: string = AppStrings.app_name;
 
   return (
@@ -51,6 +118,7 @@ function App() {
           <Route path="*" element={<Empty />} />
         </Route>
       </Routes>
+      {footer}
     </BrowserRouter>
   );
 }

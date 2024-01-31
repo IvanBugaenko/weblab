@@ -1,7 +1,7 @@
 import { CSSProperties } from "react";
 import classes from "./Banner.module.scss";
 
-function Banner(props: { banner_info: IBanner; button: JSX.Element; style?: CSSProperties }) {
+function Banner(props: { banner_info: IBanner; component?: JSX.Element; style?: CSSProperties }) {
   return (
     <section className={classes.banner} style={props.style}>
       <img src={props.banner_info.illustration} className={classes.illustration}/>
@@ -13,7 +13,7 @@ function Banner(props: { banner_info: IBanner; button: JSX.Element; style?: CSSP
           }
         />
         <p className={classes.description_text}>{props.banner_info.description}</p>
-        {props.button}
+        {props.component}
       </div>
     </section>
   );

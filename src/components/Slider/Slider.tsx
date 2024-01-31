@@ -1,5 +1,6 @@
 import { CSSProperties, useState } from "react";
 import classes from "./Slider.module.scss";
+import clsx from "clsx";
 
 function Slider(props: { slides: JSX.Element[]; style?: CSSProperties }) {
   const n_slide = props.slides.length;
@@ -16,7 +17,7 @@ function Slider(props: { slides: JSX.Element[]; style?: CSSProperties }) {
   const getDots = (slides: JSX.Element[]) => {
     return slides.map((_, i) => (
       <div
-        className={`${classes.dot} ${i === cur ? classes.active_dot : ""}`}
+        className={clsx(classes.dot, i === cur && classes.active_dot)}
       ></div>
     ));
   };
