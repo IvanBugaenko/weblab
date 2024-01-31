@@ -24,3 +24,14 @@
   font-weight: 700;
   line-height: normal;
 }
+
+@media (max-width: 1320px) {
+  .logo_img {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .logo_text {
+    font-size: 1.2rem;
+  }
+}

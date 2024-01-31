@@ -78,3 +78,75 @@
   font-size: 1.125rem;
   line-height: 3rem;
 }
+
+@media (max-width: 1320px) {
+  .h1_header {
+    font-size: 1.8rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .h2_header {
+    font-size: 1rem;
+  }
+
+  .divider {
+    width: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  .header_text {
+    line-height: 1.7rem;
+  }
+
+  .circle_image {
+    width: 6rem;
+    height: 6rem;
+    margin-right: 1.3rem;
+  }
+
+  .description_text {
+    max-width: 15rem;
+  }
+
+  .p1_description {
+    font-size: 0.9rem;
+    line-height: 1.1rem;
+  }
+
+  .p2_description {
+    font-size: 1rem;
+    line-height: 1.4rem;
+  }
+}
+
+@media (max-width: 960px) {
+  .slider_card {
+    padding: 3rem 6rem 4rem 6rem;
+  }
+
+  .h1_header {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .h2_header {
+    font-size: 0.9rem;
+  }
+
+  .header_text {
+    line-height: 1.5rem;
+  }
+
+  .description_text {
+    max-width: 10rem;
+  }
+
+  .p1_description {
+    font-size: 0.7rem;
+    line-height: 1rem;
+  }
+
+  .p2_description {
+    font-size: 0.9rem;
+  }
+}

@@ -42,3 +42,11 @@
   border: 1px solid $primary_pink;
   color: $primary_pink;
 }
+
+@media (max-width: 1320px) {
+  .button {
+    width: 11rem;
+    height: 3rem;
+    font-size: 0.9rem;
+  }
+}

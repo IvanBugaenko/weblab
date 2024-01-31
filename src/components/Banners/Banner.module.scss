@@ -49,3 +49,32 @@
 .d_none {
   display: none;
 }
+
+@media (max-width: 1320px) {
+  .text_box {
+    max-width: 20rem;
+  }
+
+  .illustration {
+    max-width: 45%;
+    min-width: 15rem;
+  }
+
+  .header_text {
+    font-size: 2rem;
+    line-height: 2.8rem;
+    margin-bottom: 1rem;
+  }
+
+  .description_text {
+    font-size: 1rem;
+    line-height: 1.7rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .divider {
+    width: 3rem;
+    border: 1px solid $primary_black;
+    margin-bottom: 1.5rem;
+  }
+}

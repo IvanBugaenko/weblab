@@ -40,3 +40,22 @@
   font-weight: 300;
   line-height: 1.75rem;
 }
+
+@media (max-width: 1320px) {
+  .icon {
+    width: 3.7rem;
+    height: 3.7rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .header_text {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .description_text {
+    font-size: 0.8rem;
+    line-height: 1.3rem;
+    margin-top: 0.5rem;
+  }
+}

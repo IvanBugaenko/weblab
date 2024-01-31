@@ -38,3 +38,8 @@
 .arrow:last-child {
   margin-left: 4.475rem;
 }
+
+.inactive_arrow {
+  cursor: default;
+  opacity: 0.4;
+}

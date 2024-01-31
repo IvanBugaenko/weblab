@@ -4,8 +4,6 @@
 :root {
   font-family: "Mulish", sans-serif;
 
-  color-scheme: light;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -20,6 +18,7 @@
 html,
 body {
   height: 100%;
+  background-color: $primary_white;
 }
 
 header,
@@ -29,4 +28,11 @@ main {
 
 main {
   min-height: 42vh;
+}
+
+@media (max-width: 1620px) {
+  header,
+  main {
+    padding: 3.5rem 8rem 0 8rem;
+  }
 }

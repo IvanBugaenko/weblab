@@ -21,17 +21,21 @@
   margin: 1.6rem;
 }
 
-.description_text {
-  color: $primary_gray;
-  font-size: 1.125rem;
-  font-style: normal;
-  font-weight: 300;
-  line-height: 1.75rem;
-}
-
 .article_cards {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 2rem;
   margin-bottom: 4.5rem;
+}
+
+@media (max-width: 1325px) {
+  .divider {
+    width: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  .header_text {
+    font-size: 1.8rem;
+    line-height: 1.5rem;
+  }
 }

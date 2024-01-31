@@ -8,11 +8,11 @@ function Slider(props: { slides: JSX.Element[]; style?: CSSProperties }) {
   const [cur, setCur] = useState(0);
 
   const leftHandle = () => {
-    setCur((cur - 1 + n_slide) % n_slide);
+    setCur(Math.max(0, cur - 1));
   };
 
   const rightHandle = () => {
-    setCur((cur + 1) % n_slide);
+    setCur(Math.min(n_slide - 1, cur + 1));
   };
 
   const getDots = (slides: JSX.Element[]) => {
@@ -27,13 +27,16 @@ function Slider(props: { slides: JSX.Element[]; style?: CSSProperties }) {
       <div className={classes.control}>
         <img
           src={AppImages.left_arrow}
-          className={classes.arrow}
+          className={clsx(classes.arrow, cur === 0 && classes.inactive_arrow)}
           onClick={leftHandle}
         />
         {getDots(props.slides)}
         <img
           src={AppImages.right_arrow}
-          className={classes.arrow}
+          className={clsx(
+            classes.arrow,
+            cur === n_slide - 1 && classes.inactive_arrow
+          )}
           onClick={rightHandle}
         />
       </div>
