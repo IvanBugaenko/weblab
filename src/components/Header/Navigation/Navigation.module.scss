@@ -1,0 +1,36 @@
+@import "../../../variables.scss";
+
+.nav_list {
+  display: flex;
+  list-style: none;
+  gap: 2.5rem;
+
+  a {
+    color: $secondary_black;
+    font-size: 1.125rem;
+    line-height: normal;
+    font-style: normal;
+    opacity: 0.5;
+    text-decoration: none;
+  }
+
+  a:hover {
+    transition-duration: 0.4s;
+    color: darken($primary_white, 40);
+  }
+}
+
+.nav_list a.active {
+  font-weight: bold;
+  opacity: 1;
+}
+
+@media (max-width: 1320px) {
+  .nav_list {
+    gap: 1.5rem;
+
+    a {
+      font-size: 1rem;
+    }
+  }
+}

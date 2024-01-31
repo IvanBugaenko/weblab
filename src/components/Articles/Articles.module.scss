@@ -1,0 +1,41 @@
+@import "../../variables.scss";
+
+.articles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.divider {
+  width: 3.5rem;
+  border: 1px solid $primary_black;
+  margin-bottom: 4.5rem;
+}
+
+.header_text {
+  color: $primary_black;
+  font-size: 2.25rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2rem;
+  margin: 1.6rem;
+}
+
+.article_cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2rem;
+  margin-bottom: 4.5rem;
+}
+
+@media (max-width: 1325px) {
+  .divider {
+    width: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  .header_text {
+    font-size: 1.8rem;
+    line-height: 1.5rem;
+  }
+}

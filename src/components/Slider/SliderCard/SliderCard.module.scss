@@ -1,0 +1,152 @@
+@import "../../../variables.scss";
+
+.slider_card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: $slider_gradient;
+  padding: 4rem 7rem 5rem 7rem;
+  border-radius: 1.5rem;
+  width: 80%;
+}
+
+.header_text {
+  color: $primary_white;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 3rem;
+}
+
+.h1_header {
+  font-size: 2.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.h2_header {
+  font-size: 1.375rem;
+}
+
+.divider {
+  width: 3.5rem;
+  border: 1px solid $primary_white;
+  margin-bottom: 5rem;
+}
+
+.information_block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+}
+
+.circle_image {
+  display: flex;
+  width: 10rem;
+  height: 10rem;
+  margin-right: 2rem;
+}
+
+.user_photo {
+  border: 3px solid $primary_white;
+  border-radius: 50%;
+}
+
+.user_info {
+  display: flex;
+  flex-direction: column;
+}
+
+.description_text {
+  color: $primary_white;
+  opacity: 0.9;
+  font-style: normal;
+  font-weight: 400;
+  max-width: 26.25rem;
+}
+
+.p1_description {
+  font-size: 1.1875rem;
+  line-height: 1.875rem;
+}
+
+.p2_description {
+  font-size: 1.125rem;
+  line-height: 3rem;
+}
+
+@media (max-width: 1320px) {
+  .h1_header {
+    font-size: 1.8rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .h2_header {
+    font-size: 1rem;
+  }
+
+  .divider {
+    width: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  .header_text {
+    line-height: 1.7rem;
+  }
+
+  .circle_image {
+    width: 6rem;
+    height: 6rem;
+    margin-right: 1.3rem;
+  }
+
+  .description_text {
+    max-width: 15rem;
+  }
+
+  .p1_description {
+    font-size: 0.9rem;
+    line-height: 1.1rem;
+  }
+
+  .p2_description {
+    font-size: 1rem;
+    line-height: 1.4rem;
+  }
+}
+
+@media (max-width: 960px) {
+  .slider_card {
+    padding: 3rem 6rem 4rem 6rem;
+  }
+
+  .h1_header {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .h2_header {
+    font-size: 0.9rem;
+  }
+
+  .header_text {
+    line-height: 1.5rem;
+  }
+
+  .description_text {
+    max-width: 10rem;
+  }
+
+  .p1_description {
+    font-size: 0.7rem;
+    line-height: 1rem;
+  }
+
+  .p2_description {
+    font-size: 0.9rem;
+  }
+}
