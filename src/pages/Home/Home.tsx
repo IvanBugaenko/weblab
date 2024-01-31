@@ -7,6 +7,7 @@ import sliders from "../../mock/Sliders";
 import Slider from "../../components/Slider/Slider";
 import articles from "../../mock/Articles";
 import Articles from "../../components/Articles/Articles";
+import AppStrings from "../../strings";
 
 function Home() {
   const mainBanner: IBanner = {
@@ -33,32 +34,27 @@ function Home() {
   };
 
   const consultButton: IButton = {
-    text: "Consult today",
+    text: AppStrings.consult_button,
     filling: true,
   };
 
-  const leadingButton: IButton = {
-    text: "Learn more",
+  const learnMoreButton: IButton = {
+    text: AppStrings.learn_more_button,
     filling: false,
   };
 
   const mobileButton: IButton = {
-    text: "Download ↓",
-    filling: false,
-  };
-
-  const serviceButton: IButton = {
-    text: "Learn more",
+    text: AppStrings.download_button,
     filling: false,
   };
 
   const articleButtonCollapsed: IButton = {
-    text: "View more",
+    text: AppStrings.view_more_button,
     filling: false,
   };
 
   const articleButtonUncollapsed: IButton = {
-    text: "Hide",
+    text: AppStrings.hide_button,
     filling: false,
   };
 
@@ -75,18 +71,15 @@ function Home() {
           style={{ margin: "5.25rem 0 0 0" }}
         />
         <Services
-          header={"Our services"}
-          description={
-            "We provide to you the best choices for you. Adjust it to your health needs and make sure your undergo \
-          treatment with our highly qualified doctors you can consult with us which type of service is suitable for your health"
-          }
+          header={AppStrings.services_header}
+          description={AppStrings.services_description}
           active_services={active_services}
-          button={<Button button_info={serviceButton}></Button>}
+          button={<Button button_info={learnMoreButton}></Button>}
           style={{ margin: "10rem 0 0 0", padding: "0 5rem" }}
         />
         <Banner
           banner_info={leadingProvidersBanner}
-          component={<Button button_info={leadingButton}></Button>}
+          component={<Button button_info={learnMoreButton}></Button>}
           style={{ margin: "14rem 0 0 0" }}
         />
         <Banner
@@ -99,7 +92,7 @@ function Home() {
           style={{ margin: "16rem 0 0 0", padding: "0 3rem" }}
         />
         <Articles
-          header={"Check out our latest article"}
+          header={AppStrings.articles_header}
           articles={articles}
           buttons={[articleButtonCollapsed, articleButtonUncollapsed]}
           style={{ margin: "10rem 0 12rem 0" }}

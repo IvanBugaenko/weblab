@@ -1,6 +1,7 @@
 import { CSSProperties, useState } from "react";
 import classes from "./Slider.module.scss";
 import clsx from "clsx";
+import AppImages from "../../images";
 
 function Slider(props: { slides: JSX.Element[]; style?: CSSProperties }) {
   const n_slide = props.slides.length;
@@ -27,13 +28,13 @@ function Slider(props: { slides: JSX.Element[]; style?: CSSProperties }) {
       {props.slides[cur]}
       <div className={classes.control}>
         <img
-          src="src\assets\images\icons\arrowLeft.svg"
+          src={AppImages.left_arrow}
           className={classes.arrow}
           onClick={leftHandle}
         />
         {getDots(props.slides)}
         <img
-          src="src\assets\images\icons\arrowRight.svg"
+          src={AppImages.right_arrow}
           className={classes.arrow}
           onClick={rightHandle}
         />

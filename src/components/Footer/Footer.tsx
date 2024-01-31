@@ -1,5 +1,7 @@
 import { CSSProperties } from "react";
 import classes from "./Footer.module.scss";
+import AppStrings from "../../strings";
+import AppImages from "../../images";
 
 function Footer(props: {
   content: { [header: string]: INavigationLink[] };
@@ -25,20 +27,11 @@ function Footer(props: {
     <footer className={classes.footer}>
       <div className={classes.company_info}>
         <div className={classes.logo}>
-          <img
-            src="src\assets\images\logo\logo_white.png"
-            className={classes.logo_img}
-          />
-          <h1 className={classes.logo_text}>{"HealthCare"}</h1>
+          <img src={AppImages.white_logo} className={classes.logo_img} />
+          <h1 className={classes.logo_text}>{AppStrings.service_name}</h1>
         </div>
-        <p className={classes.description_text}>
-          {
-            "HealthCare provides progressive, and affordable healthcare, accessible on mobile and online for everyone"
-          }
-        </p>
-        <p className={classes.description_text}>
-          {"©HealthCare PTY LTD 2023. All rights reserved"}
-        </p>
+        <p className={classes.description_text}>{AppStrings.app_description}</p>
+        <p className={classes.description_text}>{AppStrings.copyright}</p>
       </div>
       {Object.entries(props.content).map(([key, value]) => {
         return getColumn(key, value);
