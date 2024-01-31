@@ -28,6 +28,7 @@ git clone https://github.com/IvanBugaenko/weblab.git
 После этого необходимо перейти в папку с проектом и ввести следующие команды:
 
 ```
+git checkout feature/readme
 npm install
 npm run dev
 ```
