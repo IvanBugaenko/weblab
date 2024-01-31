@@ -33,7 +33,9 @@ function Articles(props: {
       <h1 className={classes.header_text}>{props.header}</h1>
       <hr className={classes.divider} />
       <div className={classes.article_cards}>
-        {getArticleCards(isCollapsed ? props.articles.slice(0, 3) : props.articles)}
+        {getArticleCards(
+          isCollapsed ? props.articles.slice(0, 3) : props.articles
+        )}
       </div>
       {isCollapsed ? collapsedButton : uncollapsedButton}
     </section>

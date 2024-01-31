@@ -20,7 +20,9 @@ function Services(props: {
       <h1 className={classes.header_text}>{props.header}</h1>
       <hr className={classes.divider} />
       <p className={classes.description_text}>{props.description}</p>
-      <div className={classes.service_cards}>{getServiceCards(props.active_services)}</div>
+      <div className={classes.service_cards}>
+        {getServiceCards(props.active_services)}
+      </div>
       {props.button}
     </section>
   );

@@ -17,9 +17,7 @@ function Slider(props: { slides: JSX.Element[]; style?: CSSProperties }) {
 
   const getDots = (slides: JSX.Element[]) => {
     return slides.map((_, i) => (
-      <div
-        className={clsx(classes.dot, i === cur && classes.active_dot)}
-      ></div>
+      <div className={clsx(classes.dot, i === cur && classes.active_dot)}></div>
     ));
   };
 
